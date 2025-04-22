@@ -1,0 +1,32 @@
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.shadow{
+    box-shadow: 5px 5px lightblue;
+    color:white;
+}
+
+#fruits li{
+    margin: 10px;
+}
+
+.star {
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    padding: 2px;
+  }
+  
+  .star.gold {
+    color: orange;
+  }
+  
