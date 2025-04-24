@@ -1,50 +1,20 @@
-* {
-    box-sizing: border-box;
-  
+.menu ul {
+    margin:0;
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+}
+
+.menu .title::before { 
+    content: '▶ ';
+    font-size: 80%;
+    color: green;
+}
+
+.menu.open .title::before {
+    content: '▼ ';
   }
-
-.myred {
-background-color: rgb(236, 165, 165);
-color: brown;
-border-radius: 5px;
-}
-
-#RndIntSection{
-    padding: 0.5%;
-    text-align: center;
-}
-
-#RndInt{
-    background-color: rgb(151, 5, 5);
-    color: rgb(241, 239, 239);
-    border-radius: 5px;
-    margin: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
-
-}
-
-#RndIntegerGenerator{
+  
+  .menu.open ul {
     display: block;
-    margin: auto;
-}
-
-.myBtn{
-    font-size:24px;
-    color:red
-}
-
-
-
-#NewsDiv p{
-    background-color: rgb(35, 1, 1);
-    color:white;
-    border-radius: 5px;
-}
-
-
-#NewsDiv div{
-    background-color: rgb(215, 95, 95);
-    color:rgb(94, 5, 5);
-    border-radius: 5px;
-}
+  }

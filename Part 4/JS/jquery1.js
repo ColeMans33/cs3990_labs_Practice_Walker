@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $("#colors").click(
         function(event){
-            alert(event.target.id.slice(3));
             $("*").removeClass("shadow");
             let targetColor=event.target.id.slice(3);
             $(`li.${targetColor}`).addClass("shadow");

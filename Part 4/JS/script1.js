@@ -31,7 +31,7 @@ class Fruit{
 
 
 class RatedFruit extends Fruit {
-  constructor(fruitName, fruitColor, rating = 3) {
+  constructor(fruitName, fruitColor, rating = 3) {                   //set 3 orange stars by def
     super(fruitName, fruitColor);
     this.rating = rating;
   }
@@ -43,13 +43,13 @@ class RatedFruit extends Fruit {
     liElem.classList.add(this.bgColor);
     liElem.innerHTML = `${this.label}: `;            //same as super class so fare
 
-    liElem.innerHTML = `${this.label}: Star Rating:`;
+    liElem.innerHTML = `${this.label} Star Rating:`;       //add text
 
 
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 5; i++) {                //create the stars themselves
       let star = document.createElement("span");
       star.classList.add("star");
-      star.innerHTML = "*";
+      star.innerHTML = "★";
       star.dataset.value = i;
       if (i <= this.rating) {
         star.classList.add("gold");
