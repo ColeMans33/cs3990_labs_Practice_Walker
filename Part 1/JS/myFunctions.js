@@ -16,6 +16,6 @@ export function buttonPrinter() {                //Prinnts the buttons onto the 
   arrButtons.forEach((btn, index) => {
     setTimeout(() => {
       btn.show();
-    }, index * 10000); //10 second delay between each button
+    }, index * 5000); //5 second delay between each button
   });
 }
